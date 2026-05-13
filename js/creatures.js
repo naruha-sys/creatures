@@ -10,8 +10,10 @@ function showHome()
         if creature lives in air, yellow
         
         */
-        alert("showHome()");
-    
+        document.querySelectorAll("div.creature").forEach(el => {
+            el.style.backgroundColor = "yellow";
+        });
+
 }//end showHome()
 
 function showType()
