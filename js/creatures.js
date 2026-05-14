@@ -10,7 +10,13 @@ function showHome()
         if creature lives in air, yellow
         
         */
-        document.querySelectorAll("div.creature").forEach(el => {
+        document.querySelectorAll('.creature[data-home="land"]').forEach(el => {
+            el.style.backgroundColor = "green";
+        });
+        document.querySelectorAll('.creature[data-home="water"]').forEach(el => {
+            el.style.backgroundColor = "blue";
+        });
+        document.querySelectorAll('.creature[data-home="air"]').forEach(el => {
             el.style.backgroundColor = "yellow";
         });
 
