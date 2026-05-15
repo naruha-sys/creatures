@@ -2,7 +2,7 @@
         
 function showHome()
 {
-    /*
+        /*
         loop through all creatures
         
         if creature lives on land, background color green
