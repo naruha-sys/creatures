@@ -30,7 +30,9 @@ function showType()
         if creature is an animal, border color solid red
         if creature is an insect, border color is dashed orange
     */
-    alert("showType()");
+    document.querySelectorAll('.creature[data-creature-type="animal"]').forEach(el => {
+        el.style.border = '2px solid red';
+    });
 }//end showType()
 
 function clearAll()
