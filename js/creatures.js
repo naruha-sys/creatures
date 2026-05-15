@@ -33,6 +33,10 @@ function showType()
     document.querySelectorAll('.creature[data-creature-type="animal"]').forEach(el => {
         el.style.border = '2px solid red';
     });
+    document.querySelectorAll('.creature[data-creature-type="insect"]').forEach(el => {
+        el.style.border = '2px dashed orange';
+    });
+
 }//end showType()
 
 function clearAll()
