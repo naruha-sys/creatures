@@ -10,13 +10,13 @@ function showHome()
         if creature lives in air, yellow
         
         */
-        document.querySelectorAll('.creature[data-home="land"]').forEach(el => {
+        document.querySelectorAll('div.creature[data-home="land"]').forEach(el => {
             el.style.backgroundColor = "green";
         });
-        document.querySelectorAll('.creature[data-home="water"]').forEach(el => {
+        document.querySelectorAll('div.creature[data-home="water"]').forEach(el => {
             el.style.backgroundColor = "blue";
         });
-        document.querySelectorAll('.creature[data-home="air"]').forEach(el => {
+        document.querySelectorAll('div.creature[data-home="air"]').forEach(el => {
             el.style.backgroundColor = "yellow";
         });
 
@@ -30,11 +30,11 @@ function showType()
         if creature is an animal, border color solid red
         if creature is an insect, border color is dashed orange
     */
-    document.querySelectorAll('.creature[data-creature-type="animal"]').forEach(el => {
-        el.style.border = '2px solid red';
+    document.querySelectorAll('div.creature[data-creature-type="animal"]').forEach(el => {
+        el.style.border = "2px solid red";
     });
-    document.querySelectorAll('.creature[data-creature-type="insect"]').forEach(el => {
-        el.style.border = '2px dashed orange';
+    document.querySelectorAll('div.creature[data-creature-type="insect"]').forEach(el => {
+        el.style.border = "2px dashed orange";
     });
 
 }//end showType()
@@ -48,5 +48,9 @@ function clearAll()
         clear background color to white
         
     */
-    alert("clearAll()");
+    document.querySelectorAll('div.creature').forEach(el => {
+        el.style.backgroundColor = "white";
+        el.style.border = "1px solid black";
+    });
+
 }//end clearAll()
